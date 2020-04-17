@@ -15,15 +15,16 @@ body{
     width: 100%;
     // background-color: #bfa;
     height: 45px;
+    
 }
-.nav-topleft{
-    margin-right: 15px;
+.nav-topright{
+    padding: 15px 10px 0 0 ;
     width: 220px;
+    height: 45px;
     float: right;
     .three{
-        margin-top: 15px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         .resume{
             // font-weight: bold;
@@ -35,14 +36,14 @@ body{
             text-decoration: underline;
         }
        i{
-           line-height: 30px;
+           line-height: 32px;
        }
         .contact{
             width: 75px;
             background-color: #4285f4;
             border-radius: 2px;
             line-height: 28px;
-            padding-left: 12px;
+            padding: 0 6px;
             a{
                 margin: 0 5px;
                 color: #fff;
@@ -57,33 +58,29 @@ body{
     position: relative;
      margin:80px auto ;
      width: 100%;
+     padding: 0 15px;
 
 
 .main-body{
-    width: 345px;
+    max-width: 586px;
     height:320px;
-    margin:0 auto;
    .name-logo{
     margin-bottom: 10px;
         img{
             display: block;
             width: 320px;
             margin: 0 auto;
-
         }
     }
     .search-bar-container{
-        
+        padding-top: 5px 9px 0 9px;
         .search-bar{
+            display: block;
             margin: 0 auto;
             max-width: 586px;
-            min-width: 345px;
             min-height: 38px;
             border: 1px solid #4d90fe;
-            padding: 5px 9px 0 9 px;
-            
-        }
-       
+        }       
 
 
 
@@ -94,6 +91,7 @@ body{
     justify-content: space-between;
     margin: 0 36px;
     margin-top: 20px;
+    border-radius: 2px;
     .introduction,.feeling-lucky{
         display: inline-block;
         width: 120px;
@@ -125,6 +123,10 @@ body{
 
 // footer
 .footer-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     clear: both;
     height: 40px;
     width: 100%;
