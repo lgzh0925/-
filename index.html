@@ -45,10 +45,29 @@
 			<div class="search-bar-container">
 				<div class="search-bar">
 					<div class="type-strings">
-
-
-
+						<span class="typing"></span>
 					</div>
+
+					<script src="./typed.js-master/lib/typed.js"></script>
+					<script>
+						var typed = new Typed('.typing', {
+							strings: [
+								'你好啊。。。',
+								'我叫李冠铮',
+								'一个前端工程师',
+								'我喜欢接触各式各样的新鲜事物。',
+								'有机会一起工作么？',
+								'别等啦！',
+								'别等啦！ 随便逛逛看看',
+								'要记得我哦！',
+								'要记得我哦！我的名字是李冠铮',
+							],
+							typeSpeed: 100,
+							backSpeed: 60,
+						});
+
+					</script>
+
 				</div>
 			</div>
 			<!-- 两个按钮 -->
