@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./fontawesome5.13/css/all.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
-    <script src="./js/typed.js-master/lib/typed.js"></script>
+    <!-- <script src="./js/typed.js-master/lib/typed.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./js/contact.js"></script>
 
 
 </head>
@@ -45,21 +47,31 @@
     <div class="get-in-touch-wrapper">
         <div class="get-in-touch">
             <h1>亲，联系我吧！</h1>
-            <h2>您的一次留意将会带来无限可能</h2>
+            <h2>可以通过微信找到我，或者直接发封邮件(｡･ω･｡)ﾉ♡</h2> 
+            <!--  (๑¯◡¯๑)-->
         </div>
-        <div class="contact-form">
-            <div class="contact">姓名:</div>
-            <input type="text">
-            <div class="contact">Email:</div>
-            <input type="text">
-            <div class="contact">主题:</div>
-            <input type="text">
-            <div class="contact">正文:</div>
-            <input class="email-content" type="text">
+        <form class="contact-form" action="https://formspree.io/moqkawkz" method="POST">
+            <label for="">
+                <div class="contact">姓名:</div>
+                <input class="name" type="text" name="name">
+            </label>
+            <label for="">
+                <div class="contact">Email:</div>
+                <input class="email" type="text" name="-replyto">
+            </label>
+            <label for="">
+                <div class="contact">主题:</div>
+                <input class="subject" type="text" name="subject">
+            </label>
+            <label for="">
+                <div class="contact">正文:</div>
+                <textarea name="message" class="message" cols="30" rows="10"></textarea>
+            </label>
             <div class="submit-wrapper">
-                <input class="submit-btn" type="submit">
+                <input class="submit-btn" type="submit" value="发送">
             </div>
-        </div>
+            <div class="status"></div>
+        </form>
 
 
 
