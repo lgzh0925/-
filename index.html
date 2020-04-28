@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
 	<script src="./js/typed.js-master/lib/typed.js"></script>
+	<!-- <script src="./js/index.js"></script> -->
 
 </head>
 
@@ -28,7 +29,45 @@
 					<a href="./files/李冠铮_lgzh0925@gmail.com_中英版.pdf" target="_blank">个人简历</a>
 				</div>
 				<div class="social-media">
-					<i class="fas fa-list-ul"></i>
+					<div class="fas fa-list-ul" onclick="qrcode()">
+						<div class="qrcode">
+                            <img src="./images/qrcode.png">
+							<span>微信二维码</span>
+							<script>
+
+								// function qrcode(){
+								// var mychar = document.getElementsByClassName("qrcode");
+								// 	if(mychar.style.display=="block"){
+								// 		mychar.style.display='none';
+								// 	}else{
+								// 		mychar.style.display='block';
+								// 	} 
+								// }
+
+								var But=document.getElementsByClassName("fa-list-ul")[0];
+								var oDiv=document.getElementsByClassName("qrcode")[0];
+								But.onclick=function(e){                  //点击出现
+									 oDiv.style.display="block";
+									 e.stopPropagation();         //阻止冒泡
+								}
+								// 点击空白消失
+								document.onclick=function(e){
+									oDiv.style.display="none";
+								}
+							</script>
+								<script>
+							function qrcode(){
+							var mychar = document.getElementByClass("qrcode");
+								if(mychar.style.display=="block"){
+									mychar.style.display='none';
+								}else{
+									mychar.style.display='block';
+								} 
+							}
+						</script>
+                        </div>
+
+					</div>
 				</div>
 
 				<div class="contact">
@@ -55,14 +94,14 @@
 						var typed = new Typed('.typing', {
 							strings: [
 								'你好啊！',
-								'我是李冠铮，',
-								'我是李冠铮，一名前端工程师。',
+								'我叫李冠铮，',
+								'我叫李冠铮，一名前端工程师',
 								'我喜欢接触各种各样的新鲜事物！',
 								'有机会可以一起工作么？',
 								'期待与您的联系!',
 							],
 							startDelay: 800,
-							typeSpeed: 100,
+							typeSpeed: 60,
 							backSpeed: 60,
 						});
 
@@ -74,18 +113,18 @@
 			<div class="button-wrapper">
 				<a href="./contact.html">
 					<div class="introduction">
-						个人介绍
+						搜我一下
 					</div>
 				</a>
-				<a href="#">
+				<a href="./contact.html">
 					<div class="feeling-lucky">
 						运气不错
 					</div>
 				</a>
 			</div>
 			<div class="link-below">
-				<a href="#">
-					这个链接用来干嘛我还没想好
+				<a href="https://www.bilibili.com/video/BV17W411N7FR">
+					我的旅行记录2016-2018
 				</a>
 			</div>
 		</div>

@@ -83,10 +83,65 @@ body{
         .resume:hover{
             text-decoration: underline;
         }
-       i{
+       .fa-list-ul{
            line-height: 30px;
         //    font-size: 16px;
        }
+        .social-media{
+        position: relative;
+        }
+
+        .social-media::after{
+            content: "";
+        /* pisition是abusolute之后就自动脱离文档流了 就自动变成块元素了 就不用设置block了 */
+        /* 设置绝对定位 */
+        position: absolute;
+        width: 0;
+        height: 0;
+        /* 设置四个方向的边框 */
+        border:solid 8px transparent;
+        border-bottom-color: white;
+        border-top: none;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;   
+        }
+
+
+    //    .social-media:hover .qrcode{
+    //        display: block;
+    //    }
+       .social-media .qrcode{
+           
+        // display: none;
+        position: absolute;
+        left: -56px;
+        width: 124px;
+        height: 142px;
+        background-color: #fff;
+        line-height: 1px;
+        text-align: center;
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+        z-index: 9999;
+
+
+        img{
+            width: 90px;
+            margin: 17px;
+            margin-bottom: 20px;
+            
+        }
+
+         span{
+            color:#000 ;
+            font-size: 15px;
+        }
+       }
+
+
+
+
         .contact{
             
             a{
