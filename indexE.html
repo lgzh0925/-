@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="李冠铮,个人简历,CV,前端,HTML,CSS,JavaScript,">
+	<meta name="description" content="李冠铮，一个求稳而敏捷的前端">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guanzheng Li</title>
+
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="./reset.css">
+	<link rel="stylesheet" href="./fontawesome5.13/css/all.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
+	<script src="./js/typed.js"></script>
+
+</head>
+
+<body>
+	<!-- > nav bar  </!-->
+	<div class="top-container">
+		<div class="nav-topright">
+			<div class="three">
+				<div class="resume">
+					<!-- 需要修改 -->
+					<a href="./files/李冠铮-惠灵顿维多利亚大学硕士研究生-15966888667.pdf" target="_blank">个人简历</a>
+				</div>
+				<div class="social-media">
+					<div class="fas fa-list-ul" onclick="qrcode()">
+						<div class="qrcode">
+                            <img src="./images/qrcode.png">
+							<span>Wechat Qr-code</span>
+							<script>
+
+								// function qrcode(){
+								// var mychar = document.getElementsByClassName("qrcode");
+								// 	if(mychar.style.display=="block"){
+								// 		mychar.style.display='none';
+								// 	}else{
+								// 		mychar.style.display='block';
+								// 	} 
+								// }
+
+								var But=document.getElementsByClassName("fa-list-ul")[0];
+								var oDiv=document.getElementsByClassName("qrcode")[0];
+								But.onclick=function(e){                  //点击出现
+									 oDiv.style.display="block";
+									 e.stopPropagation();         //阻止冒泡
+								}
+								// 点击空白消失
+								document.onclick=function(e){
+									oDiv.style.display="none";
+								}
+							</script>
+					
+                        </div>
+
+					</div>
+				</div>
+
+				<div class="contact">
+					<a href="./contactE.html">Contact</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="body-container">
+		<div class="main-body">
+			<div class="name-logo">
+				<a href="javascript:location.reload();"><img src="./images/logo.png" alt=""></a>
+			</div>
+			<!-- 搜索栏 -->
+			<div class="search-bar-container">
+				<div class="search-bar">
+					<div class="type-strings">
+						<span class="typing"></span>
+					</div>
+						<script src="./js/indexE.js"></script>
+
+					<!-- <script>
+						var typed = new Typed('.typing', {
+							strings: [
+								'你好啊！',
+								'我叫李冠铮，',
+								'我叫李冠铮，一名前端工程师',
+								'我喜欢研究各式各样的数据！',
+								'有机会可以一起工作么？',
+								'期待与您的联系!',
+							],
+							startDelay: 800,
+							typeSpeed: 60,
+							backSpeed: 60,
+						});
+
+					</script> -->
+
+				</div>
+			</div>
+			<!-- 两个按钮 -->
+			<div class="button-wrapper">
+				<a href="./searchE.html">
+					<div class="introduction">
+						Search Me
+					</div>
+				</a>
+				<a href="./contact.html">
+					<div class="feeling-lucky">
+						I'm feeling lucky
+					</div>
+				</a>
+			</div>
+			<div class="link-below">
+				<a href="https://www.bilibili.com/video/BV17W411N7FR">
+					My trip 2016-2018
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="footer-container safari_only clearfix">
+		<div class="left-footer">
+			<div class="footer-contact">
+				<a href="./contact.html">Contact</a>
+			</div>
+			<div class="footer-notice">
+				<a href="./papers.html">Reports</a>
+			</div>
+		</div>
+		<div class="right-footer">
+			<div class="English">
+				<a href="index.html">Chinese</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+
+</html>
